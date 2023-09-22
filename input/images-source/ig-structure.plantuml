@@ -14,10 +14,26 @@ database GitHubHDR [
 Includes examples
 and other artefacts
 ]
+
+database GitHubPs [
+<b>GitHub PS</b> repos
+----
+Includes examples
+and other artefacts
+]
+
 database GitHubXph [
 <b>GitHub XpanDH</b>
 ----
 
+]
+
+collections PatientSummaryIg [
+Patient Summary examples (IG)
+]
+
+collections PatientSummary [
+Patient Summary examples (other)
 ]
 
 collections LabReportIg [
@@ -40,11 +56,19 @@ HDR examples (other)
 artifact "This guide"
 artifact "Laboratory Report IG"
 artifact "Hospital Discharge Report IG"
+artifact "Patient Summary IG"
 
 
 "This guide" -- GitHubXph 
 "This guide" o-- "Laboratory Report IG"
 "This guide" o-- "Hospital Discharge Report IG"
+"This guide" o-- "Patient Summary IG"
+
+
+"Patient Summary IG" -- GitHubPs 
+"Patient Summary IG" *-- PatientSummaryIg 
+GitHubPs -- PatientSummary 
+GitHubPs -- PatientSummaryIg
 
 "Laboratory Report IG" -- GitHubLab 
 "Laboratory Report IG" *-- LabReportIg 
