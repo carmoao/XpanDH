@@ -28,6 +28,9 @@ Alias: $reference-range-meaning = http://terminology.hl7.org/CodeSystem/referenc
 Alias: $absent-unknown-uv-ips = http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips
 Alias: $allergyintolerance-verification = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification
 Alias: $allergyintolerance-clinical = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical
+Alias: $v3-Confidentiality = http://terminology.hl7.org/CodeSystem/v3-Confidentiality
+Alias: $condition-ver-status = http://terminology.hl7.org/CodeSystem/condition-ver-status
+Alias: $allergy-intolerance-criticality = http://hl7.org/fhir/allergy-intolerance-criticality
 
 // --- Value Sets
 Alias: $v3-ClassNullFlavor = http://terminology.hl7.org/ValueSet/v3-ClassNullFlavor

@@ -81,6 +81,7 @@ menu:
   Table of Contents: toc.html
   Laboratory Report: https://build.fhir.org/ig/hl7-eu/xpandh-lab
   Hospital Discharge Report: https://build.fhir.org/ig/hl7-eu/xpandh-hdr
+  Patient Summary: https://build.fhir.org/ig/hl7-eu/xpandh-ps
   Examples: examples.html
   Artifacts: artifacts.html
   Downloads: downloads.html
