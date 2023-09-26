@@ -25,6 +25,10 @@ Alias: $diagnostic-service-sections = http://terminology.hl7.org/CodeSystem/v2-0
 Alias: $obs-interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation
 Alias: $reference-range-meaning = http://terminology.hl7.org/CodeSystem/referencerange-meaning
 
+Alias: $absent-unknown-uv-ips = http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips
+Alias: $allergyintolerance-verification = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification
+Alias: $allergyintolerance-clinical = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical
+
 // --- Value Sets
 Alias: $v3-ClassNullFlavor = http://terminology.hl7.org/ValueSet/v3-ClassNullFlavor
 Alias: $v3-ActCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
