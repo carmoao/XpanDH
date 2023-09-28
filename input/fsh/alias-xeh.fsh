@@ -31,7 +31,11 @@ Alias: $allergyintolerance-clinical = http://terminology.hl7.org/CodeSystem/alle
 Alias: $v3-Confidentiality = http://terminology.hl7.org/CodeSystem/v3-Confidentiality
 Alias: $condition-ver-status = http://terminology.hl7.org/CodeSystem/condition-ver-status
 Alias: $allergy-intolerance-criticality = http://hl7.org/fhir/allergy-intolerance-criticality
-Alias: $orphanet = https://www.orpha.net // TEMPORARY 
+Alias: $orphanet = https://www.orpha.net // TEMPORARY
+Alias: $isco = urn:oid:2.16.840.1.113883.2.9.6.2.7
+
+
+
 // --- Value Sets
 Alias: $v3-ClassNullFlavor = http://terminology.hl7.org/ValueSet/v3-ClassNullFlavor
 Alias: $v3-ActCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
