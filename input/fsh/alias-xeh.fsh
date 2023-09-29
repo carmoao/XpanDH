@@ -9,6 +9,7 @@ Alias: $ajcc = http://cancerstaging.org
 Alias: $atc = http://www.whocc.no/atc
 Alias: $dicomOntology = http://dicom.nema.org/resources/ontology/DCM
 Alias: $edqm = https://standardterms.edqm.eu
+Alias: $spor-sms = http://spor.ema.eu/sms // FAKE URL TO BE CHANGED
 Alias: $iccc3 = http://terminology.hl7.org/CodeSystem/iccc-3 // FAKE URL NOT YET ASSIGNED !!
 Alias: $icd03 = http://terminology.hl7.org/CodeSystem/icd-o-3
 Alias: $loinc =  http://loinc.org
@@ -33,6 +34,7 @@ Alias: $condition-ver-status = http://terminology.hl7.org/CodeSystem/condition-v
 Alias: $allergy-intolerance-criticality = http://hl7.org/fhir/allergy-intolerance-criticality
 Alias: $orphanet = https://www.orpha.net // TEMPORARY
 Alias: $isco = urn:oid:2.16.840.1.113883.2.9.6.2.7
+Alias: $eu-device = http://example.org/eu-devices // ASSIGN URL
 
 
 

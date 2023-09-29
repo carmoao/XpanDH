@@ -3,7 +3,7 @@
 // -------------------------------------------------------------------------------					
 ValueSet: EHDSIBloodGroup					
 Id: eHDSIBloodGroup					
-Title: "eHDSIBloodGroup"					
+Title: "Blood Group"					
 Description: """The Value Set is used to code the value of patient's blood group + Rh
 """					
 // * url = "http://terminology.hl7.it/ConceptMap/ConceptMap-subject2osiris"					
