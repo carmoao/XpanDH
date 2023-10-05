@@ -1,7 +1,4 @@
 
-Alias: $radiotherapy-energy-units = http://hl7.org/fhir/us/codex-radiation-therapy/ValueSet/radiotherapy-energy-units
-Alias: $codex-radiotherapy-isotopes = http://hl7.org/fhir/us/codex-radiation-therapy/ValueSet/codex-radiotherapy-isotopes
-
 //============== ALIAS ===============
 
 // --- Code Systems
@@ -41,10 +38,14 @@ Alias: $eu-device = http://example.org/eu-devices // ASSIGN URL
 // --- Value Sets
 Alias: $v3-ClassNullFlavor = http://terminology.hl7.org/ValueSet/v3-ClassNullFlavor
 Alias: $v3-ActCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
+Alias: $v3-ParticipationType = http://terminology.hl7.org/CodeSystem/v3-ParticipationType
+Alias: $diagnosis-role = http://terminology.hl7.org/CodeSystem/diagnosis-role
 
 Alias: $results-laboratory-observations-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/results-laboratory-observations-uv-ips
 Alias: $results-coded-values-laboratory-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/results-coded-values-laboratory-uv-ips
 
+Alias: $radiotherapy-energy-units = http://hl7.org/fhir/us/codex-radiation-therapy/ValueSet/radiotherapy-energy-units
+Alias: $codex-radiotherapy-isotopes = http://hl7.org/fhir/us/codex-radiation-therapy/ValueSet/codex-radiotherapy-isotopes
 
 // ---- Extensions
 Alias: $condition-related = http://hl7.org/fhir/StructureDefinition/condition-related
@@ -60,8 +61,15 @@ Alias: $workflow-supportingInfo = http://hl7.org/fhir/StructureDefinition/workfl
 Alias: $bodySite = http://hl7.org/fhir/StructureDefinition/bodySite
 Alias: $flag-detail = http://hl7.org/fhir/StructureDefinition/flag-detail
 Alias: $flag-priority = http://hl7.org/fhir/StructureDefinition/flag-priority
-Alias: $composition-diagnostic-report-reference = http://hl7.eu/fhir/ig/xeh/StructureDefinition/composition-DiagnosticReportReference
+// Alias: $composition-diagnostic-report-reference = http://hl7.eu/fhir/ig/xeh/StructureDefinition/composition-DiagnosticReportReference
 Alias: $diagnostic-report-composition-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition
+
+Alias: $patient-citizenship = http://hl7.org/fhir/StructureDefinition/patient-citizenship
+Alias: $patient-nationality = http://hl7.org/fhir/StructureDefinition/patient-nationality
+Alias: $composition-basedOn-order-or-requisition = http://hl7.eu/fhir/StructureDefinition/composition-basedOn-order-or-requisition
+Alias: $information-recipient = http://hl7.eu/fhir/StructureDefinition/information-recipient
+Alias: $composition-clinicaldocument-versionNumber = http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber
+
 
 // --- Profiles
 Alias: $Composition-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/Composition-uv-ips

@@ -4,7 +4,7 @@
 ValueSet: EHDSIAllergenNoDrug					
 Id: eHDSIAllergenNoDrug					
 Title: "Allergen No Drug"					
-Description: """The value set is used to code the patient's kind of adverse reactions against substance, food or drugs"""					
+Description: """The value set is used to code the patient\'s kind of adverse reactions against substance, food or drugs"""					
 // * url = "http://terminology.hl7.it/ConceptMap/ConceptMap-subject2osiris"					
 * ^status = #active					
 * ^experimental = false					
@@ -13,7 +13,7 @@ Description: """The value set is used to code the patient's kind of adverse reac
 * $sct#102259006  "Citrus fruit"					
 * $sct#102261002  "Strawberry"					
 * $sct#102262009  "Chocolate"					
-* $sct#102263004  "Eggs (edible)"					
+* $sct#102263004  "Eggs"					
 * $sct#102264005  "Cheese"					
 * $sct#105590001  "Substance"					
 * $sct#111088007  "Latex"					
