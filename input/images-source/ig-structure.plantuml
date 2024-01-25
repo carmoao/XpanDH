@@ -81,4 +81,14 @@ GitHubHDR -- HDR
 GitHubHDR -- HDRIg
 
 
+url of "Patient Summary IG" is  [[https://build.fhir.org/ig/hl7-eu/xpandh-ps]]
+url of "Laboratory Report IG" is  [[https://build.fhir.org/ig/hl7-eu/xpandh-lab]]
+url of "Hospital Discharge Report IG" is  [[https://build.fhir.org/ig/hl7-eu/xpandh-hdr]]
+
+url of GitHubHDR is  [[https://github.com/hl7-eu/xpandh-hdr]]
+url of GitHubLab is  [[https://github.com/hl7-eu/xpandh-lab]]
+url of GitHubPs is  [[https://github.com/hl7-eu/xpandh-ps]]
+url of GitHubXph is  [[https://github.com/hl7-eu/xpandh]]
+
+
 @enduml
