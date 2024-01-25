@@ -3,19 +3,22 @@
 
 
   <blockquote class="stu-note">
-    <p>The specification herewith documented is for the time being a working specification, and may not be used for any implementation purposes. 
+    <p>The specification herewith documented is a working specification, and may not be used for any implementation purposes. 
     No liability can be inferred from the use or misuse of this specification, or its consequences.</p>
   </blockquote>
 
   <a name="scope"></a>
   <h3>Scope</h3>
   <p>
-    This is the access point for the XpanDH project HL7 FHIR Implementation Guides, created to assist the work of the pilots for the <a href="#adoption-domains">XpanDH exprimentation bubbles</a>.
+    This is the access point to the XpanDH project open repositories and artefacts for the EEHRxF specifications organised per adoption domain.
+  </p>
+<p>
+   This includes the HL7 FHIR Implementation Guides, created to assist the work of the pilots for the <a href="#adoption-domains">XpanDH exprimentation bubbles</a>.
   </p>
 
   <a name="guides-structure"></a>
-  <h3>XpanDH Guides structure</h3>
-  <p>The follwing figure shows the relationships among the artefacts of interest for this guide</p>
+  <h3>XpanDH open repository structure</h3>
+  <p>The follwing figure shows the relationships among the XpanDH repositories and artefacts (including HL7 FHIR Gs)</p>
   <p>{% include ig-structure.svg %}</p>
   <p>
     <ul>
@@ -34,7 +37,7 @@
           <li>The <a href="https://github.com/hl7-eu/xpandh-ps">Patient Summary GitHub</a> repository</li>
         </ul>
       </li>
-      <li>All the examples created for supporting the X-Bubbles are stored in the GitHub Repositories. Some of them are also accessible thorugh the dedicated FHIR IG  </li>
+      <li>All the examples created for supporting the X-Bubbles are stored in the GitHub Repositories. Some of them are also accessible thorugh the dedicated FHIR IG</li>
     </ul>
   </p>
 
