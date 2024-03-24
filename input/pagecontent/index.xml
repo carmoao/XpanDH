@@ -27,6 +27,7 @@
           <li>The <a href="https://build.fhir.org/ig/hl7-eu/xpandh-lab">Laboratory Report Implementation Guide</a></li>
           <li>The <a href="https://build.fhir.org/ig/hl7-eu/xpandh-hdr">Hospital Discharge Report Implementation Guide</a></li>
           <li>The <a href="https://build.fhir.org/ig/hl7-eu/xpandh-ps">Patient Summary Implementation Guide</a></li>
+          <li>The <a href="https://build.fhir.org/ig/hl7-eu/xpandh-mpd">Medicinal Prescription and Dispense (MPD) Implementation Guide</a></li>
         </ul>
       </li>
       <li>All the source files are stored in dedicated GitHub Repositories:
@@ -35,6 +36,7 @@
           <li>The <a href="https://github.com/hl7-eu/xpandh-lab">Laboratory Report GitHub</a> repository</li>
           <li>The <a href="https://github.com/hl7-eu/xpandh-hdr">Hospital Discharge Report GitHub</a> repository</li>
           <li>The <a href="https://github.com/hl7-eu/xpandh-ps">Patient Summary GitHub</a> repository</li>
+          <li>The <a href="https://github.com/hl7-eu/xpandh-mpd">Medicinal Prescription and Dispense (MPD) GitHub</a> repository</li>
         </ul>
       </li>
       <li>All the examples created for supporting the X-Bubbles are stored in the GitHub Repositories. Some of them are also accessible thorugh the dedicated FHIR IG</li>
@@ -94,6 +96,11 @@
   <h3>Global Profiles</h3>
 
 {% include globals-table.xhtml %}
+
+<a name="ip-statements"></a>
+<h3>IP Statements</h3>
+
+{% include ip-statements.xhtml %}
 
   <a name="authors"></a>
   <h3>Authors and Contributors</h3>

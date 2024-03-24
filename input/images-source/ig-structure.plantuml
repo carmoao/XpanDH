@@ -22,6 +22,14 @@ Includes examples
 and other artefacts
 ]
 
+
+database GitHubMpd [
+<b>GitHub MPS</b> repos
+----
+Includes examples
+and other artefacts
+]
+
 database GitHubXph [
 <b>GitHub XpanDH</b>
 ----
@@ -48,6 +56,10 @@ collections HDRIg [
 HDR examples (IG)
 ]
 
+collections MPDIg [
+MPD examples (IG)
+]
+
 collections HDR [
 HDR examples (other)
 ]
@@ -57,12 +69,14 @@ artifact "This guide"
 artifact "Laboratory Report IG"
 artifact "Hospital Discharge Report IG"
 artifact "Patient Summary IG"
+artifact "Medication Prescription and Dispense (MPD) IG" as mpd
 
 
 "This guide" -- GitHubXph 
 "This guide" o-- "Laboratory Report IG"
 "This guide" o-- "Hospital Discharge Report IG"
 "This guide" o-- "Patient Summary IG"
+"This guide" o-- mpd
 
 
 "Patient Summary IG" -- GitHubPs 
@@ -80,6 +94,9 @@ GitHubLab -- LabReportIg
 GitHubHDR -- HDR
 GitHubHDR -- HDRIg
 
+mpd -- GitHubMpd
+mpd *-- MPDIg 
+GitHubMpd -- MPDIg
 
 url of "Patient Summary IG" is  [[https://build.fhir.org/ig/hl7-eu/xpandh-ps]]
 url of "Laboratory Report IG" is  [[https://build.fhir.org/ig/hl7-eu/xpandh-lab]]
@@ -88,6 +105,7 @@ url of "Hospital Discharge Report IG" is  [[https://build.fhir.org/ig/hl7-eu/xpa
 url of GitHubHDR is  [[https://github.com/hl7-eu/xpandh-hdr]]
 url of GitHubLab is  [[https://github.com/hl7-eu/xpandh-lab]]
 url of GitHubPs is  [[https://github.com/hl7-eu/xpandh-ps]]
+url of GitHubMpd is  [[https://github.com/hl7-eu/xpandh-mpd]]
 url of GitHubXph is  [[https://github.com/hl7-eu/xpandh]]
 
 
