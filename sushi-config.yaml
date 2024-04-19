@@ -82,6 +82,7 @@ menu:
   Laboratory Report: https://build.fhir.org/ig/hl7-eu/xpandh-lab
   Hospital Discharge Report: https://build.fhir.org/ig/hl7-eu/xpandh-hdr
   Patient Summary: https://build.fhir.org/ig/hl7-eu/xpandh-ps
+  MPD: https://build.fhir.org/ig/hl7-eu/xpandh-mpd
 #  Examples: examples.html
   Artifacts: artifacts.html
   Downloads: downloads.html

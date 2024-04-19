@@ -82,10 +82,6 @@
   <p>More details on X-Bubbles and Adoption Doamin in XpanDH deliverable D1.4 and D4.1 <a href="https://xpandh-project.iscte-iul.pt/">XpanDH Web Site</a>
   </p>
 
-  <a name="dependencies"></a>
-  <h3>Dependencies</h3>
-
-{% include dependency-table.xhtml %}
 
   <a name="x-versions"></a>
   <h3>Cross Version Analysis</h3>
