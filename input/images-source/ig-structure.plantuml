@@ -1,5 +1,8 @@
 @startuml
-
+skinparam artifact {
+    BackgroundColor<<active>> LightGreen
+    BackgroundColor<<inactive>> LightGray
+}
 
 database GitHubLab [
 <b>GitHub Lab</b> repos
@@ -22,7 +25,6 @@ Includes examples
 and other artefacts
 ]
 
-
 database GitHubMpd [
 <b>GitHub MPS</b> repos
 ----
@@ -33,7 +35,6 @@ and other artefacts
 database GitHubXph [
 <b>GitHub XpanDH</b>
 ----
-
 ]
 
 collections PatientSummaryIg [
@@ -64,20 +65,19 @@ collections HDR [
 HDR examples (other)
 ]
 
-
-artifact "This guide"
-artifact "Laboratory Report IG"
-artifact "Hospital Discharge Report IG"
-artifact "Patient Summary IG"
-artifact "Medication Prescription and Dispense (MPD) IG" as mpd
-
+artifact "This guide" <<active>>
+artifact "Laboratory Report IG" <<inactive>>
+artifact "Hospital Discharge Report IG" <<active>>
+artifact "Patient Summary IG" <<active>>
+artifact "Medication Prescription and Dispense (MPD) IG" as mpd <<inactive>>
+artifact "HL7 EU Laboratory Report" as hl7LabReport <<active>>
+artifact "HL7 EU MPD" as hl7Mpd <<active>>
 
 "This guide" -- GitHubXph 
 "This guide" o-- "Laboratory Report IG"
 "This guide" o-- "Hospital Discharge Report IG"
 "This guide" o-- "Patient Summary IG"
 "This guide" o-- mpd
-
 
 "Patient Summary IG" -- GitHubPs 
 "Patient Summary IG" *-- PatientSummaryIg 
@@ -98,18 +98,26 @@ mpd -- GitHubMpd
 mpd *-- MPDIg 
 GitHubMpd -- MPDIg
 
-url of "Patient Summary IG" is  [[https://build.fhir.org/ig/hl7-eu/xpandh-ps]]
-url of "Laboratory Report IG" is  [[https://build.fhir.org/ig/hl7-eu/xpandh-lab]]
-url of "Hospital Discharge Report IG" is  [[https://build.fhir.org/ig/hl7-eu/xpandh-hdr]]
-url of mpd is  [[https://build.fhir.org/ig/hl7-eu/xpandh-mpd]]
+hl7LabReport --> "Laboratory Report IG" : substitute
+hl7Mpd --> mpd : substitute
 
+"Laboratory Report IG" --> hl7LabReport : input for
+mpd --> hl7Mpd : input for
 
+artifact "Sandbox Lab" as sandboxLab
+sandboxLab -- hl7LabReport
+url of sandboxLab is [[https://sandbox.hl7europe.eu/]]
 
-url of GitHubHDR is  [[https://github.com/hl7-eu/xpandh-hdr]]
-url of GitHubLab is  [[https://github.com/hl7-eu/xpandh-lab]]
-url of GitHubPs is  [[https://github.com/hl7-eu/xpandh-ps]]
-url of GitHubMpd is  [[https://github.com/hl7-eu/xpandh-mpd]]
-url of GitHubXph is  [[https://github.com/hl7-eu/xpandh]]
+url of hl7LabReport is [[https://hl7.eu/fhir/laboratory/]]
+url of hl7Mpd is [[https://build.fhir.org/ig/hl7-eu/mpd/]]
+url of "Patient Summary IG" is [[https://build.fhir.org/ig/hl7-eu/xpandh-ps]]
+url of "Laboratory Report IG" is [[https://build.fhir.org/ig/hl7-eu/xpandh-lab]]
+url of "Hospital Discharge Report IG" is [[https://build.fhir.org/ig/hl7-eu/xpandh-hdr]]
+url of mpd is [[https://build.fhir.org/ig/hl7-eu/xpandh-mpd]]
 
-
+url of GitHubHDR is [[https://github.com/hl7-eu/xpandh-hdr]]
+url of GitHubLab is [[https://github.com/hl7-eu/xpandh-lab]]
+url of GitHubPs is [[https://github.com/hl7-eu/xpandh-ps]]
+url of GitHubMpd is [[https://github.com/hl7-eu/xpandh-mpd]]
+url of GitHubXph is [[https://github.com/hl7-eu/xpandh]]
 @enduml
