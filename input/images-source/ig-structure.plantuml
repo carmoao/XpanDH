@@ -1,7 +1,7 @@
 @startuml
 skinparam artifact {
     BackgroundColor<<active>> LightGreen
-    BackgroundColor<<inactive>> LightGray
+    BackgroundColor<<retired>> LightGray
 }
 
 database GitHubLab [
@@ -66,10 +66,10 @@ HDR examples (other)
 ]
 
 artifact "This guide" <<active>>
-artifact "Laboratory Report IG" <<inactive>>
+artifact "Laboratory Report IG" <<retired>>
 artifact "Hospital Discharge Report IG" <<active>>
 artifact "Patient Summary IG" <<active>>
-artifact "Medication Prescription and Dispense (MPD) IG" as mpd <<inactive>>
+artifact "Medication Prescription and Dispense (MPD) IG" as mpd <<retired>>
 artifact "HL7 EU Laboratory Report" as hl7LabReport <<active>>
 artifact "HL7 EU MPD" as hl7Mpd <<active>>
 
