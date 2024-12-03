@@ -2,6 +2,7 @@
 skinparam artifact {
     BackgroundColor<<active>> LightGreen
     BackgroundColor<<retired>> LightGray
+    BackgroundColor<<onDevelop>> LightBlue
 }
 
 database GitHubLab [
@@ -67,11 +68,13 @@ HDR examples (other)
 
 artifact "This guide" <<active>>
 artifact "Laboratory Report IG" <<retired>>
-artifact "Hospital Discharge Report IG" <<active>>
-artifact "Patient Summary IG" <<active>>
+artifact "Hospital Discharge Report IG" <<retired>>
+artifact "Patient Summary IG" <<retired>>
 artifact "Medication Prescription and Dispense (MPD) IG" as mpd <<retired>>
 artifact "HL7 EU Laboratory Report" as hl7LabReport <<active>>
-artifact "HL7 EU MPD" as hl7Mpd <<active>>
+artifact "HL7 EU MPD" as hl7Mpd <<onDevelop>>
+artifact "HL7 EU HDR" as hl7Hdr <<onDevelop>>
+artifact "HL7 EU Patient Summary" as hl7Eps <<onDevelop>>
 
 "This guide" -- GitHubXph 
 "This guide" o-- "Laboratory Report IG"
@@ -80,29 +83,33 @@ artifact "HL7 EU MPD" as hl7Mpd <<active>>
 "This guide" o-- mpd
 
 "Patient Summary IG" -- GitHubPs 
-"Patient Summary IG" *-- PatientSummaryIg 
+"Patient Summary IG" *-- PatientSummaryIg
 GitHubPs -- PatientSummary 
 GitHubPs -- PatientSummaryIg
+hl7Eps --> "Patient Summary IG" : substitute
+"Patient Summary IG" --> hl7Eps : input for
 
 "Laboratory Report IG" -- GitHubLab 
 "Laboratory Report IG" *-- LabReportIg 
 GitHubLab -- LabReport 
 GitHubLab -- LabReportIg
+hl7LabReport --> "Laboratory Report IG" : substitute
+"Laboratory Report IG" --> hl7LabReport : input for
 
 "Hospital Discharge Report IG" -- GitHubHDR
 "Hospital Discharge Report IG" *-- HDRIg
+"Hospital Discharge Report IG" *-- HDRIg
 GitHubHDR -- HDR
 GitHubHDR -- HDRIg
+hl7Hdr --> "Hospital Discharge Report IG" : substitute
+"Hospital Discharge Report IG" --> hl7Hdr : input for
 
 mpd -- GitHubMpd
 mpd *-- MPDIg 
 GitHubMpd -- MPDIg
-
-hl7LabReport --> "Laboratory Report IG" : substitute
 hl7Mpd --> mpd : substitute
-
-"Laboratory Report IG" --> hl7LabReport : input for
 mpd --> hl7Mpd : input for
+
 
 artifact "Sandbox Lab" as sandboxLab
 sandboxLab -- hl7LabReport
@@ -110,6 +117,8 @@ url of sandboxLab is [[https://sandbox.hl7europe.eu/]]
 
 url of hl7LabReport is [[https://hl7.eu/fhir/laboratory/]]
 url of hl7Mpd is [[https://build.fhir.org/ig/hl7-eu/mpd/]]
+url of hl7Hdr is [[https://build.fhir.org/ig/hl7-eu/hdr/]]
+url of hl7Eps is [[https://build.fhir.org/ig/hl7-eu/eps/]]
 url of "Patient Summary IG" is [[https://build.fhir.org/ig/hl7-eu/xpandh-ps]]
 url of "Laboratory Report IG" is [[https://build.fhir.org/ig/hl7-eu/xpandh-lab]]
 url of "Hospital Discharge Report IG" is [[https://build.fhir.org/ig/hl7-eu/xpandh-hdr]]
