@@ -82,10 +82,14 @@ menu:
   Laboratory Report: 
     HL7 EU: http://hl7.eu/fhir/laboratory
     XpanDH (retired): https://build.fhir.org/ig/hl7-eu/xpandh-lab 
-  Hospital Discharge Report: https://build.fhir.org/ig/hl7-eu/xpandh-hdr
-  Patient Summary: https://build.fhir.org/ig/hl7-eu/xpandh-ps
+  Hospital Discharge Report:
+    HL7 EU (on dev): https://build.fhir.org/ig/hl7-eu/hdr
+    XpanDH (retired): https://build.fhir.org/ig/hl7-eu/xpandh-hdr
+  Patient Summary:
+    HL7 EU (on dev): https://build.fhir.org/ig/hl7-eu/eps
+    XpanDH (retired): https://build.fhir.org/ig/hl7-eu/xpandh-ps
   MPD: 
-    HL7 EU: https://build.fhir.org/ig/hl7-eu/mpd
+    HL7 EU (on dev): https://build.fhir.org/ig/hl7-eu/mpd
     XpanDH (retired): https://build.fhir.org/ig/hl7-eu/xpandh-mpd
 #  Examples: examples.html
   Artifacts: artifacts.html
